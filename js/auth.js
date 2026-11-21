@@ -24,9 +24,7 @@ function showMessage(message, success = false) {
     element.style.color = success ? "#4B9B78" : "#D45B75";
 }
 
-// ========================================
 // PASSWORD VISIBILITY
-// ========================================
 
 document.querySelectorAll(".toggle-password").forEach(button => {
     button.addEventListener("click", () => {
@@ -40,9 +38,9 @@ document.querySelectorAll(".toggle-password").forEach(button => {
     });
 });
 
-// ========================================
+
 // REGISTRATION
-// ========================================
+
 
 const registerForm = document.getElementById("registerForm");
 
@@ -93,9 +91,9 @@ if (registerForm) {
     });
 }
 
-// ========================================
+
 // LOGIN
-// ========================================
+
 
 const loginForm = document.getElementById("loginForm");
 
@@ -142,9 +140,9 @@ if (loginForm) {
     });
 }
 
-// ========================================
+
 // DASHBOARD ACCESS
-// ========================================
+
 
 const isDashboard = document.querySelector(".dashboard-page");
 
@@ -202,9 +200,9 @@ if (isDashboard) {
     }
 }
 
-// ========================================
+
 // PROJECT MANAGEMENT DEMO
-// ========================================
+
 
 function getProjects() {
     try {
@@ -291,9 +289,9 @@ if (createProjectBtn) {
     });
 }
 
-// ========================================
+
 // LOGOUT
-// ========================================
+
 
 const logoutBtn = document.getElementById("logoutBtn");
 
@@ -306,9 +304,9 @@ if (logoutBtn) {
     });
 }
 
-// ========================================
+
 // MOBILE SIDEBAR
-// ========================================
+
 
 const menuToggle = document.getElementById("menuToggle");
 const sidebar = document.getElementById("sidebar");
@@ -329,9 +327,9 @@ if (menuToggle && sidebar) {
     });
 }
 
-// ========================================
+
 // SAFE HTML DISPLAY
-// ========================================
+
 
 function escapeHTML(value) {
     return String(value).replace(/[&<>"']/g, character => ({
