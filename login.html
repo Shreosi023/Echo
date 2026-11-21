@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Project Echo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+
+    <main class="auth-layout">
+
+        <section class="auth-showcase">
+            <div class="showcase-top">
+                <div class="logo-mark">E</div>
+                <span>PROJECT ECHO</span>
+            </div>
+
+            <div class="showcase-content">
+                <span class="eyebrow">NETWORK INTELLIGENCE PLATFORM</span>
+                <h1>See the network.<br>Understand the problem.</h1>
+                <p>
+                    Simulate network environments, trace packet journeys,
+                    identify faults and discover alternative communication paths.
+                </p>
+
+                <div class="network-art">
+                    <div class="network-line line-one"></div>
+                    <div class="network-line line-two"></div>
+                    <div class="network-line line-three"></div>
+                    <div class="network-line line-four"></div>
+
+                    <div class="network-node node-a">
+                        <span>PC</span>
+                    </div>
+                    <div class="network-node node-b">
+                        <span>R1</span>
+                    </div>
+                    <div class="network-node node-c">
+                        <span>R2</span>
+                    </div>
+                    <div class="network-node node-d">
+                        <span>PC</span>
+                    </div>
+                    <div class="network-node node-e">
+                        <span>SW</span>
+                    </div>
+                    <div class="network-node node-f">
+                        <span>PC</span>
+                    </div>
+                    <div class="packet-dot"></div>
+                </div>
+            </div>
+
+            <div class="showcase-footer">
+                <span>Diagnose. Analyze. Optimize.</span>
+                <span>© 2026 Project Echo</span>
+            </div>
+        </section>
+
+        <section class="auth-panel">
+            <div class="mobile-logo">
+                <div class="logo-mark">E</div>
+                <span>PROJECT ECHO</span>
+            </div>
+
+            <div class="auth-form-wrapper">
+                <div class="form-heading">
+                    <span class="eyebrow">WELCOME BACK</span>
+                    <h2>Sign in to Echo</h2>
+                    <p>Enter your account details to continue.</p>
+                </div>
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label-row">
+                            <label for="password">Password</label>
+                        </div>
+
+                        <div class="password-wrapper">
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+                            <button
+                                type="button"
+                                class="toggle-password"
+                                data-target="password"
+                            >Show</button>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-option">
+                            <input type="checkbox" id="remember">
+                            <span>Remember me</span>
+                        </label>
+                    </div>
+
+                    <p id="message" class="form-message" aria-live="polite"></p>
+
+                    <button type="submit" class="primary-btn">
+                        Sign In <span>→</span>
+                    </button>
+                </form>
+
+                <div class="form-divider"><span>OR</span></div>
+
+                <a href="index.html?guest=true" class="guest-btn">
+                    Continue as Guest
+                </a>
+
+                <p class="form-bottom">
+                    New to Project Echo?
+                    <a href="register.html">Create an account</a>
+                </p>
+            </div>
+
+            <p class="panel-footer">
+                A smarter way to understand network failures.
+            </p>
+        </section>
+
+    </main>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
