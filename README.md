@@ -20,26 +20,30 @@ It checks whether another route is available.
 It identifies other computers that might be affected.
 It generates a diagnostic report explaining the problem and possible solution.
 This is the central idea behind Echo.
+
 3. Main Functionalities
-1. Network Topology Designer
+   Network Topology Designer
 Users can:
 Add computers, routers, and switches.
 Connect devices through virtual cables.
 Move, edit, and remove devices.
 Configure basic device properties, such as IP addresses and ports.
-2. Network Simulation
+
+   Network Simulation
 Users can:
 Select a source and destination computer.
 Send simulated packets.
 Watch packets travel through the network.
 See the transmission path and delivery status.
-3. Fault Injection
+
+   Fault Injection
 Users can intentionally introduce network problems:
 Break a connection.
 Disable a router or switch.
 Remove or misconfigure a routing entry.
 Restore a failed connection or device.
-4. Automated Fault Diagnosis
+
+   Automated Fault Diagnosis
 Echo analyzes failed communication and identifies possible causes.
 For example:
 Broken connection between two routers.
@@ -48,19 +52,21 @@ Router unavailable.
 Missing routing entry.
 It also explains the evidence supporting its diagnosis.
 
-5. Alternative Route Detection
+   Alternative Route Detection
 If the primary communication path fails, Echo:
 Searches for another available path.
 Displays the alternative route.
 Checks whether the destination can still be reached.
-6. Network Resilience Analysis
+
+   Network Resilience Analysis
 Echo evaluates how the network behaves when devices or connections fail.
 It can:
 Count reachable and unreachable computers.
 Identify affected devices.
 Compare network connectivity before and after a failure.
 Show whether alternative routes maintain communication.
-7. Diagnostic Reports
+
+   Diagnostic Reports
 Echo generates reports containing:
 Source and destination.
 Transmission status.
