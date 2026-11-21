@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f7fb">
+    <title>Dashboard | Project Echo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+
+    <div class="dashboard-layout">
+
+        <aside class="sidebar" id="sidebar">
+            <a href="dashboard.html" class="sidebar-brand">
+                <div class="logo-mark">E</div>
+                <div>
+                    <strong>PROJECT ECHO</strong>
+                    <small>NETWORK INTELLIGENCE</small>
+                </div>
+            </a>
+
+            <div class="sidebar-label">WORKSPACE</div>
+
+            <nav class="side-nav">
+                <a href="#overview" class="nav-item active">
+                    <span class="nav-icon">⌂</span> Overview
+                </a>
+                <a href="#projects" class="nav-item">
+                    <span class="nav-icon">▦</span> My Projects
+                </a>
+                <a href="#activity" class="nav-item">
+                    <span class="nav-icon">◷</span> Recent Activity
+                </a>
+            </nav>
+
+            <div class="sidebar-label tools-label">TOOLS</div>
+
+            <nav class="side-nav">
+                <a href="#diagnostics" class="nav-item">
+                    <span class="nav-icon">⌁</span> Diagnostics
+                </a>
+                <a href="#reports" class="nav-item">
+                    <span class="nav-icon">▤</span> Reports
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="sidebar-help">
+                    <div class="help-icon">?</div>
+                    <div>
+                        <strong>Need help?</strong>
+                        <small>Explore the Echo workspace</small>
+                    </div>
+                </div>
+
+                <div class="user-profile">
+                    <div class="avatar" id="userAvatar">G</div>
+                    <div class="user-info">
+                        <strong id="userName">Guest User</strong>
+                        <small id="userRole">Guest access</small>
+                    </div>
+                    <button id="logoutBtn" class="logout-icon"
+                        title="Log out" aria-label="Log out">↗</button>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content" id="overview">
+
+            <header class="topbar">
+                <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle sidebar">☰</button>
+
+                <div class="breadcrumb">
+                    Workspace <span>/</span> <strong>Overview</strong>
+                </div>
+
+                <div class="topbar-right">
+                    <span class="status-indicator"></span>
+                    <span>System ready</span>
+                    <div class="top-avatar" id="topAvatar">G</div>
+                </div>
+            </header>
+
+            <section class="welcome-section">
+                <div>
+                    <span class="eyebrow">YOUR NETWORK WORKSPACE</span>
+                    <h1>Good day, <span id="welcomeName">there</span>.</h1>
+                    <p>Here's what's happening in your network workspace.</p>
+                </div>
+
+                <div class="date-display" id="currentDate"></div>
+            </section>
+
+            <section class="quick-actions">
+                <div>
+                    <h3>Ready to explore?</h3>
+                    <p>Start by creating a virtual network topology.</p>
+                </div>
+                <button class="create-btn" id="createProjectBtn">
+                    <span>＋</span> Create New Project
+                </button>
+            </section>
+
+            <section class="stats-grid">
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Total Projects</span>
+                        <span class="stat-icon lavender">▦</span>
+                    </div>
+                    <h2 id="projectCount">03</h2>
+                    <p>Your saved network workspaces</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Simulations</span>
+                        <span class="stat-icon blue">⌁</span>
+                    </div>
+                    <h2>24</h2>
+                    <p>Packet transmission tests</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Faults Detected</span>
+                        <span class="stat-icon pink">⌕</span>
+                    </div>
+                    <h2>08</h2>
+                    <p>Issues identified in simulations</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Network Health</span>
+                        <span class="stat-icon green">♡</span>
+                    </div>
+                    <h2>94<span class="percent">%</span></h2>
+                    <p>Illustrative health score</p>
+                </article>
+            </section>
+
+            <section class="content-grid" id="projects">
+
+                <div class="content-card projects-card">
+                    <div class="section-heading">
+                        <div>
+                            <h2>Recent Projects</h2>
+                            <p>Continue where you left off.</p>
+                        </div>
+                        <a href="#projects">View all</a>
+                    </div>
+
+                    <div class="project-list" id="projectList">
+                        <article class="project-item">
+                            <div class="project-symbol purple">⌘</div>
+                            <div class="project-details">
+                                <strong>Campus Network Design</strong>
+                                <small>12 devices · Updated recently</small>
+                            </div>
+                            <span class="project-status completed">Saved</span>
+                            <button class="project-open" type="button"
+                                data-project="Campus Network Design">→</button>
+                        </article>
+
+                        <article class="project-item">
+                            <div class="project-symbol blue">⌁</div>
+                            <div class="project-details">
+                                <strong>Router Fault Analysis</strong>
+                                <small>8 devices · Updated recently</small>
+                            </div>
+                            <span class="project-status testing">Testing</span>
+                            <button class="project-open" type="button"
+                                data-project="Router Fault Analysis">→</button>
+                        </article>
+
+                        <article class="project-item">
+                            <div class="project-symbol pink">◇</div>
+                            <div class="project-details">
+                                <strong>Office LAN Simulation</strong>
+                                <small>15 devices · Updated recently</small>
+                            </div>
+                            <span class="project-status completed">Saved</span>
+                            <button class="project-open" type="button"
+                                data-project="Office LAN Simulation">→</button>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="content-card activity-card" id="activity">
+                    <div class="section-heading">
+                        <div>
+                            <h2>Recent Activity</h2>
+                            <p>Your latest workspace actions.</p>
+                        </div>
+                    </div>
+
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-dot green-dot"></div>
+                            <div>
+                                <strong>Network simulation completed</strong>
+                                <small>Campus Network Design</small>
+                                <time>Recently</time>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-dot pink-dot"></div>
+                            <div>
+                                <strong>Routing issue detected</strong>
+                                <small>Router Fault Analysis</small>
+                                <time>Recently</time>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-dot blue-dot"></div>
+                            <div>
+                                <strong>Project configuration updated</strong>
+                                <small>Office LAN Simulation</small>
+                                <time>Recently</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="bottom-grid">
+                <div class="content-card network-card" id="diagnostics">
+                    <div class="section-heading">
+                        <div>
+                            <h2>Network Diagnostics</h2>
+                            <p>Tools available in your Echo workspace.</p>
+                        </div>
+                        <span class="coming-soon">MODULES PREVIEW</span>
+                    </div>
+
+                    <div class="diagnostic-tools">
+                        <div class="diagnostic-tool">
+                            <div class="tool-icon tool-blue">⌘</div>
+                            <div>
+                                <strong>Topology Designer</strong>
+                                <small>Build and configure virtual networks</small>
+                            </div>
+                        </div>
+
+                        <div class="diagnostic-tool">
+                            <div class="tool-icon tool-green">↗</div>
+                            <div>
+                                <strong>Packet Simulation</strong>
+                                <small>Trace packet movement across devices</small>
+                            </div>
+                        </div>
+
+                        <div class="diagnostic-tool">
+                            <div class="tool-icon tool-pink">⌕</div>
+                            <div>
+                                <strong>Fault Diagnosis</strong>
+                                <small>Identify network issues and their causes</small>
+                            </div>
+                        </div>
+
+                        <div class="diagnostic-tool">
+                            <div class="tool-icon tool-purple">⌁</div>
+                            <div>
+                                <strong>Resilience Analysis</strong>
+                                <small>Explore alternate paths and connectivity</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insight-card" id="reports">
+                    <span class="insight-tag">PROJECT ECHO</span>
+                    <div class="insight-graphic">E</div>
+                    <h2>Every connection<br>tells a story.</h2>
+                    <p>
+                        Understand how your network behaves,
+                        discover where it fails and find a better path.
+                    </p>
+                    <span class="insight-footer">DIAGNOSE · ANALYZE · OPTIMIZE</span>
+                </div>
+            </section>
+
+            <footer class="dashboard-footer">
+                <span>© 2026 Project Echo</span>
+                <span>Network Fault Diagnosis & Resilience Analysis</span>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
